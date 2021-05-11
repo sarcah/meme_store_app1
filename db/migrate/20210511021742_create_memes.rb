@@ -2,7 +2,7 @@ class CreateMemes < ActiveRecord::Migration[6.1]
   def change
     create_table :memes do |t|
       t.string :name
-      t.string :description
+      t.text :description
       t.integer :downloads
       t.decimal :price
       t.string :keywords
