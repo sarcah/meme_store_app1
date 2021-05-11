@@ -21,10 +21,10 @@
     <%= form.text_area :description %>
   </div>
 
-  <div class="field">
+  <%# <div class="field">
     <%= form.label :downloads %>
-    <%= form.number_field :downloads %>
-  </div>
+    <%# <%= form.number_field :downloads %>
+  <%# </div> %>
 
   <div class="field">
     <%= form.label :price %>
@@ -36,7 +36,13 @@
     <%= form.text_field :keyword %>
   </div>
 
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
+
 <% end %>
