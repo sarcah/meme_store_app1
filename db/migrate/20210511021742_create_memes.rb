@@ -5,7 +5,7 @@ class CreateMemes < ActiveRecord::Migration[6.1]
       t.text :description
       t.integer :downloads
       t.decimal :price
-      t.string :keywords
+      t.string :category
       t.string :string
 
       t.timestamps
