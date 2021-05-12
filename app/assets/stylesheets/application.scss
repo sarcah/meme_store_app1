@@ -20,3 +20,46 @@
 
 
 .nav li {display: inline-block;}
+
+header {
+    background-color: darkslategray;
+}
+
+header img {
+    max-height: 200px;
+}
+
+header a {
+    color: lime;
+    font-size: 5em;
+    padding: 0 2em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header a:hover {
+    color: lime;
+}
+
+table img {
+    max-height: 150px;
+}
+
+.field {
+    margin: 1em;
+}
+
+.field label {
+    min-width: 100px;
+    text-justify: center;
+    vertical-align: top;
+}
+
+.field input, textarea {
+    min-width: 200px;
+}
+
+.actions input {
+    background-color: lime;
+    font-weight: bold;
+    padding: 1em;
+}

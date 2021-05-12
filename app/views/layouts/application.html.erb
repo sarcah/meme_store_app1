@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MemeStore</title>
+    <title>Meme Library</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag asset_path('neon_m_favicon') %>
   </head>
 
   <body>
     <div class="container">
+    <%= render 'Shared/header' %>
       <p class="alert"><%= alert %></p>
       <%= yield %>
+      <%= render 'Shared/navbar' %>
     </div>
   </body>
 </html>
