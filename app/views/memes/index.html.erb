@@ -9,6 +9,7 @@
       <th>Description</th>
       <%# <th>Downloads</th> %>
       <th>Price</th>
+      <%# <th>Image</th> %>
       <%# <th>Category</th> %>
       <th colspan="3"></th>
     </tr>
@@ -18,10 +19,12 @@
     <% @memes.each do |meme| %>
       <tr>
         <td><%= meme.name %></td>
+
         <td><%= meme.description %></td>
         <%# <td><%= meme.downloads %>
         <td><%= meme.price %></td>
         <%# <td><%= meme.category %>
+        <%# <td><%= image_tag meme.image</td> %>
         <td><%= link_to 'Show', meme %></td>
         <td><%= link_to 'Edit', edit_meme_path(meme) %></td>
         <td><%= link_to 'Destroy', meme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -33,4 +36,3 @@
 <br>
 
 <%# <%= link_to 'New Meme', new_meme_path %>
-
