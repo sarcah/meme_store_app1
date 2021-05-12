@@ -16,7 +16,7 @@
 <%# </p> %>
 
 <p>
-  <strong>Price:</strong>
+  <strong>Price: $</strong>
   <%= @meme.price %>
 </p>
 
@@ -28,5 +28,9 @@
 <%= image_tag @meme.image %>
 </p>
 
+<br>
+
 <%= link_to 'Edit', edit_meme_path(@meme) %> |
 <%= link_to 'Back', memes_path %>
+
+<br>
